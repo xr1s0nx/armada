@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Zaprosy</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="header-top">
+               <div class="top-balance d-flex justify-content-end align-items-center">
+                  <p class="balance-text">Баланс: 313 лимитов</p>
+                  <a class="tasks-work">Задачи в работе</a>
+                  <a class="history">История</a>
+               </div>
+               <div class="header-nav d-flex flex-wrap">
+                  <div class="switch-btns d-flex align-items-center justify-content-between">
+                     <a class="switch-btn active">Запросы</a>
+                     <a class="switch-btn">Конкуренты</a>
+                  </div>
+                  <div class="info d-flex align-item-center justify-content-between flex-wrap">
+                     <p class="info-site">Текущий сайт: vpn-rus.ru</p>
+                     <p class="info-group">Текущая группа: vpn для Android купить</p>
+                  </div>
+                  <div class="header-btn d-flex justify-content-end">
+                     <a class="btn add-task d-block">Добавить сайт</a>
+                  </div>
+               </div>
+               <div class="filters d-flex align-item-center flex-wrap">
+                  <div class="custom-select">
+                     <select>
+                        <option value="0">Настройка столбцов</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                     </select>
+                  </div>
+                  <div class="custom-select">
+                    <select>
+                       <option value="0">Фильтр запросов</option>
+                       <option value="1">Option 1</option>
+                       <option value="2">Option 2</option>
+                    </select>
+                 </div>
+                 <div class="custom-select">
+                    <select>
+                       <option value="0">Фильтр сайтов</option>
+                       <option value="1">Option 1</option>
+                       <option value="2">Option 2</option>
+                    </select>
+                 </div>
+                  <a class="btn custom-select filter-btn d-flex"> Показать график </a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="columns">
+            <div class="container">
+               <form class="columns-content">
+                  <h4 class="content-title">Настройка столбцов</h4>
+                  <div class="row">
+                     <div class="col">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-1" />
+                           <span>Колонка страниц</span>
+                        </label>
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-2" />
+                           <span>Колонка [!Частотности]</span>
+                        </label>
+                     </div>
+                     <div class="col">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-3" />
+                           <span>Колонка периода</span>
+                        </label>
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-4" />
+                           <span>Колонка медианы</span>
+                        </label>
+                     </div>
+                     <div class="col">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-5" />
+                           <span>Колонка базовой частотности</span>
+                        </label>
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-6" />
+                           <span>Колонка динамики</span>
+                        </label>
+                     </div>
+                     <div class="col">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-7" />
+                           <span>Колонка точной “Частности”</span>
+                        </label>
+                        <label class="custom-checkbox big-check">
+                           <input type="checkbox" value="value-8" />
+                           <span>Отображение смены релевантных страниц</span>
+                        </label>
+                     </div>
+                     <div class="col">
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-9" />
+                           <span>Колонка “!Частности”</span>
+                        </label>
+                        <label class="custom-checkbox">
+                           <input type="checkbox" value="value-10" />
+                           <span>Колонка коммерции запроса</span>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="col-props d-flex align-items-center flex-wrap">
+                     <div class="count-prop">
+                        <p class="prop-title">Количество отображаемых последних дат</p>
+                        <input type="number" class="count-inp" value="5" />
+                     </div>
+                     <div class="date-prop">
+                        <p class="prop-title">Дата сравнения динамики</p>
+                        <input type="date" class="date-inp" />
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <section class="site-filter">
+            <div class="container">
+               <form class="site-filter_content">
+                  <div class="content-top d-flex align-items-center flex-wrap">
+                     <h4 class="content-title">Фильтр сайтов:</h4>
+                     <label class="container-check"
+                        >Мой сайт
+                        <input type="radio" checked name="radio" />
+                        <span class="checkmark"></span>
+                     </label>
+                     <label class="container-check"
+                        >Cайт конкурента
+                        <input type="radio" name="radio" />
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+                  <div class="filter-prop d-flex align-item-center flex-wrap">
+                     <div class="prop">
+                        <p class="prop-title">Показать сайты</p>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           Активные
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                     <div class="prop">
+                        <p class="prop-title">Поиск по сайтам</p>
+                        <div class="search-inp d-flex align-item-center">
+                           <img src="img/search-inp.svg" alt="" />
+                           <input type="text" placeholder="Введите запрос" />
+                        </div>
+                     </div>
+                     <div class="prop">
+                        <div class="d-flex justify-content-between align-item-center">
+                           <p class="prop-title">Сайт</p>
+                           <div class="red-btns d-flex align-item-center">
+                              <a class="red-btn">Редактировать</a>
+                              <a class="red-btn">Добавить</a>
+                           </div>
+                        </div>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           vpn-rus.ru
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                     <div class="prop">
+                        <p class="prop-title">Город</p>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           Москва
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                     <div class="prop">
+                        <div class="d-flex justify-content-between align-item-center">
+                           <p class="prop-title">Группа запросов:</p>
+                           <div class="red-btns d-flex align-item-center">
+                              <a class="red-btn">Редактировать</a>
+                              <a class="red-btn">Добавить</a>
+                           </div>
+                        </div>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           vpn для Android купить
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <section class="site-filter">
+            <div class="container">
+               <form class="site-filter_content">
+                  <div class="content-top d-flex align-items-center flex-wrap">
+                     <h4 class="content-title">Фильтр запросов:</h4>
+                  </div>
+                  <div class="filter-prop d-flex align-item-center flex-wrap">
+                     <div class="prop">
+                        <p class="prop-title">Показать запросы</p>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           Все
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                     <div class="prop">
+                        <p class="prop-title">Период</p>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           Месяц
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                     <div class="prop">
+                        <p class="prop-title">Маска фильтра по страницам</p>
+                        <div class="search-inp d-flex align-item-center" style="padding-left: 12px">
+                           <input type="text" placeholder="Введите маску по страницам" style="margin-left: 0" />
+                        </div>
+                     </div>
+                     <div class="prop">
+                        <p class="prop-title">Маска фильтра по запросам</p>
+                        <div class="search-inp d-flex align-item-center" style="padding-left: 12px">
+                           <input type="text" placeholder="Введите маску по запросам" style="margin-left: 0" />
+                        </div>
+                     </div>
+                     <div class="prop last-prop">
+                        <p class="prop-title">Страницы сайта</p>
+                        <a class="prop-select d-flex align-items-center justify-content-between">
+                           Без фильтрации
+                           <img src="img/filter-ing-arrow.svg" alt="" class="filter-arr" />
+                        </a>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <div class="container">
+            <div class="graph-sec">
+               <img src="img/graph.jpg" alt="" class="graph" />
+            </div>
+         </div>
+      </main>
+      <!--SCRIPTS-->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+      ></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
